@@ -1,5 +1,7 @@
 ﻿using System;
 using CursoDo0AoJunior.Execucao.EstruturaDeDados.LinkedList;
+using CursoDo0AoJunior.Execucao.EstruturaDeDados.Queue;
+using CursoDo0AoJunior.Execucao.EstruturaDeDados.Stack;
 
 namespace CursoDo0AoJunior
 {
@@ -15,6 +17,10 @@ namespace CursoDo0AoJunior
             SinglyLinkedListTeste.ExecutarTeste();
             DoublyLinkedListTeste.ExecutarTeste();
             CircularLinkedListTeste.ExecutarTeste();
+
+            StackArrayTeste.ExecutarTeste();
+
+            QueueArrayTeste.ExecutarTeste();
         }
     }
 }
