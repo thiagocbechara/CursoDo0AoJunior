@@ -37,7 +37,7 @@ namespace CursoDo0AoJunior.EstruturaDeDados.Queue
 
         public T Peek()
         {
-            if (Front == Count)
+            if (Count == 0)
             {
                 throw new InvalidOperationException("Empty queue");
             }
