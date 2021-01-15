@@ -1,7 +1,7 @@
 using System;
-using CursoDo0AoJunior.EstruturaDeDados.LinkedList;
+using CursoDo0AoJunior.Modulo3.EstruturaDeDados.LinkedList;
 
-namespace CursoDo0AoJunior.Execucao.EstruturaDeDados.LinkedList
+namespace CursoDo0AoJunior.Modulo3.Execucao.EstruturaDeDados.LinkedList
 {
     public static class DoublyLinkedListTeste
     {

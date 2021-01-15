@@ -1,6 +1,6 @@
 using System;
 
-namespace CursoDo0AoJunior.EstruturaDeDados.Stack
+namespace CursoDo0AoJunior.Modulo3.EstruturaDeDados.Stack
 {
     public sealed class StackArray<T>
     {

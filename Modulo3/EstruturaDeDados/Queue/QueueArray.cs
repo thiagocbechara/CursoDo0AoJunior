@@ -1,6 +1,6 @@
 using System;
 
-namespace CursoDo0AoJunior.EstruturaDeDados.Queue
+namespace CursoDo0AoJunior.Modulo3.EstruturaDeDados.Queue
 {
     public sealed class QueueArray<T>
     {

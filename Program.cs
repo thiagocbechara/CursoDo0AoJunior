@@ -1,7 +1,7 @@
 ﻿using System;
-using CursoDo0AoJunior.Execucao.EstruturaDeDados.LinkedList;
-using CursoDo0AoJunior.Execucao.EstruturaDeDados.Queue;
-using CursoDo0AoJunior.Execucao.EstruturaDeDados.Stack;
+using CursoDo0AoJunior.Modulo3.Execucao.EstruturaDeDados.LinkedList;
+using CursoDo0AoJunior.Modulo3.Execucao.EstruturaDeDados.Queue;
+using CursoDo0AoJunior.Modulo3.Execucao.EstruturaDeDados.Stack;
 
 namespace CursoDo0AoJunior
 {

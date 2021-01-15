@@ -1,27 +1,28 @@
 using System;
 
-namespace CursoDo0AoJunior.EstruturaDeDados.LinkedList
+namespace CursoDo0AoJunior.Modulo3.EstruturaDeDados.LinkedList
 {
-    public class CircularLinkedList
+    public class DoublyLinkedList
     {
-        public CircularLinkedList(string value)
+        public DoublyLinkedList(string value)
         {
-            Head = Tail = NextNode = this;
+            Head = Tail = this;
             Length = 1;
             Position = 1;
             Value = value;
         }
 
-        public CircularLinkedList Head { get; private set; }
-        public CircularLinkedList Tail { get; private set; }
-        public CircularLinkedList NextNode { get; private set; }
+        public DoublyLinkedList Head { get; private set; }
+        public DoublyLinkedList Tail { get; private set; }
+        public DoublyLinkedList PreviousNode { get; private set; }
+        public DoublyLinkedList NextNode { get; private set; }
         public int Length { get; private set; }
         public int Position { get; private set; }
         public string Value { get; set; }
 
-        public CircularLinkedList Append(string value)
+        public DoublyLinkedList Append(string value)
         {
-            var newNode = new CircularLinkedList(value)
+            var newNode = new DoublyLinkedList(value)
             {
                 Head = Head
             };
@@ -29,22 +30,22 @@ namespace CursoDo0AoJunior.EstruturaDeDados.LinkedList
             return this;
         }
 
-        private void Append(CircularLinkedList node)
+        private void Append(DoublyLinkedList node)
         {
             Length++;
             Tail = node;
-            if (NextNode == Head)
+            if (NextNode == null)
             {
                 node.Length = node.Position = Length;
                 node.Tail = node;
-                node.NextNode = Head;
+                node.PreviousNode = this;
                 NextNode = node;
                 return;
             }
             NextNode.Append(node);
         }
 
-        public CircularLinkedList GetNodeAt(int position)
+        public DoublyLinkedList GetNodeAt(int position)
         {
             if (Position == position)
             {
@@ -52,5 +53,6 @@ namespace CursoDo0AoJunior.EstruturaDeDados.LinkedList
             }
             return NextNode.GetNodeAt(position);
         }
+    
     }
 }

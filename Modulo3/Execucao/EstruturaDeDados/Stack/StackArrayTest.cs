@@ -1,7 +1,7 @@
 using System;
-using CursoDo0AoJunior.EstruturaDeDados.Stack;
+using CursoDo0AoJunior.Modulo3.EstruturaDeDados.Stack;
 
-namespace CursoDo0AoJunior.Execucao.EstruturaDeDados.Stack
+namespace CursoDo0AoJunior.Modulo3.Execucao.EstruturaDeDados.Stack
 {
     public static class StackArrayTeste
     {

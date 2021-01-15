@@ -1,10 +1,10 @@
 using System;
 
-namespace CursoDo0AoJunior.EstruturaDeDados.LinkedList
+namespace CursoDo0AoJunior.Modulo3.EstruturaDeDados.LinkedList
 {
-    public class DoublyLinkedList
+    public class SinglyLinkedList
     {
-        public DoublyLinkedList(string value)
+        public SinglyLinkedList(string value)
         {
             Head = Tail = this;
             Length = 1;
@@ -12,17 +12,16 @@ namespace CursoDo0AoJunior.EstruturaDeDados.LinkedList
             Value = value;
         }
 
-        public DoublyLinkedList Head { get; private set; }
-        public DoublyLinkedList Tail { get; private set; }
-        public DoublyLinkedList PreviousNode { get; private set; }
-        public DoublyLinkedList NextNode { get; private set; }
+        public SinglyLinkedList Head { get; private set; }
+        public SinglyLinkedList Tail { get; private set; }
+        public SinglyLinkedList NextNode { get; private set; }
         public int Length { get; private set; }
         public int Position { get; private set; }
         public string Value { get; set; }
 
-        public DoublyLinkedList Append(string value)
+        public SinglyLinkedList Append(string value)
         {
-            var newNode = new DoublyLinkedList(value)
+            var newNode = new SinglyLinkedList(value)
             {
                 Head = Head
             };
@@ -30,7 +29,7 @@ namespace CursoDo0AoJunior.EstruturaDeDados.LinkedList
             return this;
         }
 
-        private void Append(DoublyLinkedList node)
+        private void Append(SinglyLinkedList node)
         {
             Length++;
             Tail = node;
@@ -38,14 +37,13 @@ namespace CursoDo0AoJunior.EstruturaDeDados.LinkedList
             {
                 node.Length = node.Position = Length;
                 node.Tail = node;
-                node.PreviousNode = this;
                 NextNode = node;
                 return;
             }
             NextNode.Append(node);
         }
 
-        public DoublyLinkedList GetNodeAt(int position)
+        public SinglyLinkedList GetNodeAt(int position)
         {
             if (Position == position)
             {
@@ -53,6 +51,5 @@ namespace CursoDo0AoJunior.EstruturaDeDados.LinkedList
             }
             return NextNode.GetNodeAt(position);
         }
-    
     }
 }

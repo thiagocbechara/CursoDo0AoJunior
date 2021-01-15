@@ -1,27 +1,27 @@
 using System;
 
-namespace CursoDo0AoJunior.EstruturaDeDados.LinkedList
+namespace CursoDo0AoJunior.Modulo3.EstruturaDeDados.LinkedList
 {
-    public class SinglyLinkedList
+    public class CircularLinkedList
     {
-        public SinglyLinkedList(string value)
+        public CircularLinkedList(string value)
         {
-            Head = Tail = this;
+            Head = Tail = NextNode = this;
             Length = 1;
             Position = 1;
             Value = value;
         }
 
-        public SinglyLinkedList Head { get; private set; }
-        public SinglyLinkedList Tail { get; private set; }
-        public SinglyLinkedList NextNode { get; private set; }
+        public CircularLinkedList Head { get; private set; }
+        public CircularLinkedList Tail { get; private set; }
+        public CircularLinkedList NextNode { get; private set; }
         public int Length { get; private set; }
         public int Position { get; private set; }
         public string Value { get; set; }
 
-        public SinglyLinkedList Append(string value)
+        public CircularLinkedList Append(string value)
         {
-            var newNode = new SinglyLinkedList(value)
+            var newNode = new CircularLinkedList(value)
             {
                 Head = Head
             };
@@ -29,21 +29,22 @@ namespace CursoDo0AoJunior.EstruturaDeDados.LinkedList
             return this;
         }
 
-        private void Append(SinglyLinkedList node)
+        private void Append(CircularLinkedList node)
         {
             Length++;
             Tail = node;
-            if (NextNode == null)
+            if (NextNode == Head)
             {
                 node.Length = node.Position = Length;
                 node.Tail = node;
+                node.NextNode = Head;
                 NextNode = node;
                 return;
             }
             NextNode.Append(node);
         }
 
-        public SinglyLinkedList GetNodeAt(int position)
+        public CircularLinkedList GetNodeAt(int position)
         {
             if (Position == position)
             {

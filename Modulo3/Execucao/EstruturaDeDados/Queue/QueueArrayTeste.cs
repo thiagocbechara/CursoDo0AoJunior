@@ -1,7 +1,7 @@
 using System;
-using CursoDo0AoJunior.EstruturaDeDados.Queue;
+using CursoDo0AoJunior.Modulo3.EstruturaDeDados.Queue;
 
-namespace CursoDo0AoJunior.Execucao.EstruturaDeDados.Queue
+namespace CursoDo0AoJunior.Modulo3.Execucao.EstruturaDeDados.Queue
 {
     public static class QueueArrayTeste
     {
