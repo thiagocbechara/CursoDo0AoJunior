@@ -48,9 +48,6 @@ namespace CursoDo0AoJunior
 
             sortedArray = QuickSort.Sort(array);
             Console.WriteLine($"QuickSort: {string.Join(',', sortedArray)}");
-
-            sortedArray = HeapSort.Sort(array);
-            Console.WriteLine($"HeapSort: {string.Join(',', sortedArray)}");
         }
     }
 }
