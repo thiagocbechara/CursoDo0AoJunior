@@ -4,6 +4,7 @@ using CursoDo0AoJunior.Modulo3.Execucao.EstruturaDeDados.LinkedList;
 using CursoDo0AoJunior.Modulo3.Execucao.EstruturaDeDados.Queue;
 using CursoDo0AoJunior.Modulo3.Execucao.EstruturaDeDados.Stack;
 using CursoDo0AoJunior.Modulo3.Ordenacao;
+using CursoDo0AoJunior.Modulo5;
 
 namespace CursoDo0AoJunior
 {
@@ -11,8 +12,20 @@ namespace CursoDo0AoJunior
     {
         public static void Main(string[] args)
         {
-            ExecutarTestesLinkedList();
-            ExercutarTestesOrdenacao();
+            var suv = new SUV();
+            // carro.Cor = "vermelho";
+            suv.LigarCarro();
+            AcelerarObjeto(suv);
+            // Console.WriteLine(carro.Fabricante);
+            // Console.WriteLine(carro.Cor);
+
+            // ExecutarTestesLinkedList();
+            // ExercutarTestesOrdenacao();
+        }
+
+        private static void AcelerarObjeto(IAcelerar obj)
+        {
+            obj.Acelerar();
         }
 
         private static void ExecutarTestesLinkedList()
