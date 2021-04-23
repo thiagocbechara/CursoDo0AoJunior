@@ -19,11 +19,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testes", "Testes", "{698606
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Banco", "Banco", "{7E0F1B29-A07A-4F53-B5B3-B7CA6926BF9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Banco.API", "Aplicacoes\banco-api\Banco.API\Banco.API.csproj", "{1385EA32-9298-465D-990D-54297C5846DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Banco.API", "Aplicacoes\banco-api\Banco.API\Banco.API.csproj", "{1385EA32-9298-465D-990D-54297C5846DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Banco.Domain", "Aplicacoes\banco-api\Banco.Domain\Banco.Domain.csproj", "{576E3047-C38F-4ED7-B4F7-F9B1F3412C3C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Banco.Domain", "Aplicacoes\banco-api\Banco.Domain\Banco.Domain.csproj", "{576E3047-C38F-4ED7-B4F7-F9B1F3412C3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Banco.Infra", "Aplicacoes\banco-api\Banco.Infra\Banco.Infra.csproj", "{DC7E2383-77FB-4DE8-918D-30DB57E8DDDD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Banco.Infra", "Aplicacoes\banco-api\Banco.Infra\Banco.Infra.csproj", "{DC7E2383-77FB-4DE8-918D-30DB57E8DDDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Games.Infra.Test", "Testes\Games.Infra.Test\Games.Infra.Test.csproj", "{FECF82C8-7291-4FAD-9FBD-B515EBA38B57}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -119,6 +121,18 @@ Global
 		{DC7E2383-77FB-4DE8-918D-30DB57E8DDDD}.Release|x64.Build.0 = Release|Any CPU
 		{DC7E2383-77FB-4DE8-918D-30DB57E8DDDD}.Release|x86.ActiveCfg = Release|Any CPU
 		{DC7E2383-77FB-4DE8-918D-30DB57E8DDDD}.Release|x86.Build.0 = Release|Any CPU
+		{FECF82C8-7291-4FAD-9FBD-B515EBA38B57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FECF82C8-7291-4FAD-9FBD-B515EBA38B57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FECF82C8-7291-4FAD-9FBD-B515EBA38B57}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FECF82C8-7291-4FAD-9FBD-B515EBA38B57}.Debug|x64.Build.0 = Debug|Any CPU
+		{FECF82C8-7291-4FAD-9FBD-B515EBA38B57}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FECF82C8-7291-4FAD-9FBD-B515EBA38B57}.Debug|x86.Build.0 = Debug|Any CPU
+		{FECF82C8-7291-4FAD-9FBD-B515EBA38B57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FECF82C8-7291-4FAD-9FBD-B515EBA38B57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FECF82C8-7291-4FAD-9FBD-B515EBA38B57}.Release|x64.ActiveCfg = Release|Any CPU
+		{FECF82C8-7291-4FAD-9FBD-B515EBA38B57}.Release|x64.Build.0 = Release|Any CPU
+		{FECF82C8-7291-4FAD-9FBD-B515EBA38B57}.Release|x86.ActiveCfg = Release|Any CPU
+		{FECF82C8-7291-4FAD-9FBD-B515EBA38B57}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -132,6 +146,7 @@ Global
 		{1385EA32-9298-465D-990D-54297C5846DF} = {7E0F1B29-A07A-4F53-B5B3-B7CA6926BF9E}
 		{576E3047-C38F-4ED7-B4F7-F9B1F3412C3C} = {7E0F1B29-A07A-4F53-B5B3-B7CA6926BF9E}
 		{DC7E2383-77FB-4DE8-918D-30DB57E8DDDD} = {7E0F1B29-A07A-4F53-B5B3-B7CA6926BF9E}
+		{FECF82C8-7291-4FAD-9FBD-B515EBA38B57} = {6986068C-1193-4D64-9C0E-372659CEAF14}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F6A4C52C-A658-4E47-A14F-90E5B8C50A60}
