@@ -17,9 +17,9 @@ namespace Banco.Domain
 
         private long Id => Entity.Id;
 
-        public string Numero { get; private set; }
-        public decimal Saldo { get; private set; }
-        public bool Ativa { get; private set; }
+        public string Numero { get => Entity.Numero; }
+        public decimal Saldo { get => Entity.Saldo; }
+        public bool Ativa { get => Entity.Ativa; }
 
         public bool Sacar(decimal valor)
         {
@@ -27,7 +27,7 @@ namespace Banco.Domain
             {
                 return false;
             }
-            Saldo -= valor;
+            Entity.Saldo -= valor;
             AtualizarSaldo();
             return true;
         }
@@ -39,7 +39,7 @@ namespace Banco.Domain
                 return false;
             }
 
-            Saldo += valor;
+            Entity.Saldo += valor;
             AtualizarSaldo();
             return true;
         }
@@ -51,7 +51,7 @@ namespace Banco.Domain
 
             if (Id == 0)
             {
-                return SituacaoInativarContaEnum.ErroGenerico;
+                return SituacaoInativarContaEnum.IdZero;
             }
 
             if (!Repository.ContaExistente(Id))

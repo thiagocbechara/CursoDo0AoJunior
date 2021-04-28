@@ -6,6 +6,7 @@
         ContaNaoEncontrada,
         ContaJaInativa,
         SaldoNaoZerado,
+        IdZero,
         ErroGenerico
     }
 }
